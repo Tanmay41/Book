@@ -1,6 +1,5 @@
 body {
-    color: rgb(71, 71, 71);
-    background-color: rgba(243, 238, 255, 0.843);
+    background-color: rgb(41, 41, 41);
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
 }
@@ -16,16 +15,17 @@ body {
     border-radius: 6px;
     margin-left: auto;
     margin-right: auto;
-  }
+}
   
-  .module {
+.module {
     color: rgb(71, 71, 71);
     border-radius: 6px;
     background-color: rgba(243, 238, 255, 0.843);
     padding: 2rem;
-  }
+}
 
-  #parent {
+#book-parent {
+  margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
     column-gap: 5vw;
@@ -34,16 +34,50 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-  }
+}
+
+#Book-Search {
+  background-color: white;
+  height: 2.5rem;
+  width: 50rem;
+  border-radius: 4px;
+  align-self: center;
+}
+
+#Search {
+  background-color: white;
+  height: 2.5rem;
+  width: 5rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+#Search:hover {
+  outline: none;
+  text-align: left;
+  font-size: 1.5rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #97ffdb;
+  transition: all .2s ease-in-out;
+}
+
+#Top {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
 
 
+.module:hover {
+  background-color: #97ffdb;
+  transition: all .5s ease-in;
+}
 
 
-
-
-
-
-
-  input {
+input {
     all: unset;
-  }
+}

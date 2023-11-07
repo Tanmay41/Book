@@ -10,7 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="parent">
+
+    <div id="Top">
+        <form action="/search">
+            <input type="text" name="query" id="Book-Search" placeholder="Search" autofocus autocomplete="off">
+            <input type="submit" value="Search" id="Search">
+        </form>
+    </div>
+    <div id="book-parent">
         <% for (let index = 0; index < lenght; index++) {%>
             <form action="/Book/<%= index + 1 %>" method="get" class="module-border-wrap">
                 <div class="module">

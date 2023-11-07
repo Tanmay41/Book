@@ -1,7 +1,8 @@
 import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
-
+import { log } from "console";
+//rgba(243, 238, 255, 0.843)
 const app = express();
 const port = 3000;
 
@@ -30,6 +31,16 @@ app.get("/Book/:id",  async (req, res) => {
     const id = req.params.id;
     let result = await db.query(`SELECT * FROM books WHERE id=${id}`);
     console.log(result.rows);
+    res.render("book.ejs", { data: result.rows });
+});
+
+app.get("/search", async (req, res) => {
+  let request = req.query.query;
+  console.log(request);
+  let result = await db.query(`SELECT * FROM books WHERE name LIKE '%${request}%'`);
+  console.log(result.rows);
+  result = result.rows
+  res.render("index.ejs", {result, lenght: result.length})
 })
 
 
