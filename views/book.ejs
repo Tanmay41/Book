@@ -33,14 +33,50 @@
             text-align: left;
             margin-right: 5rem;
         }
+
+        #color {
+            color: white;
+            -webkit-animation: glow 1s ease-in-out infinite alternate;
+            -moz-animation: glow 1s ease-in-out infinite alternate;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        #score-div {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        em {
+            all: unset;
+        }
+
+        #score {
+            font-size: 5em;
+            margin-bottom: -1px;
+        }
+
+        @-webkit-keyframes glow {
+            from {
+                text-shadow: 0 0 20px #fff, 0 0 30px #cefff7, 0 0 40px #cefff7, 0 0 50px #cefff7;
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #cefff7, 0 0 40px #cefff7, 0 0 50px #cefff7;
+                }
+            }
+}
     </style>
 </head>
 <body>
-    <h1 id="name"><%= data[0].name %></h1>
+    <h1 id="name">"<%= data[0].name %>"</h1>
     <div id="About">
         <div id="inner-about">
             <p><%= data[0].about %></p>
         </div>
+    </div>
+
+
+    <div id="score-div">
+        <p id="score"><em id="color"><%= data[0].rating %></em>/10</p>
     </div>
 </body>
 </html>
