@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Book
 
 ## Description
@@ -92,3 +93,4 @@ If you'd like to contribute to this project, please follow these steps:
 - tanmayror19@gmail.com
 
 Feel free to contact me if you have any questions or suggestions!
+=======
