@@ -60,6 +60,8 @@ This is a web application for managing a collection of books. Users can view a l
           ('Harry Potter Series', 'A beloved fantasy series about a young wizard''s adventures at Hogwarts School of Witchcraft and Wizardry.', 9);
       ```
 
+5. Update index.js with your own pgAdmin Password in the line 11
+
 6. Start the application.
 
     ```shell
@@ -67,7 +69,7 @@ This is a web application for managing a collection of books. Users can view a l
     ```
 
 
-5. Open a web browser and access the application at `http://localhost:3000`.
+7. Open a web browser and access the application at `http://localhost:3000`.
 
 ## Usage
 
