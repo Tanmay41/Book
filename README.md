@@ -40,7 +40,26 @@ This is a web application for managing a collection of books. Users can view a l
     ```
 4. Set up your PostgreSQL database and update the database connection details in your code.
 
-5. Start the application.
+    - Create new DB called books
+    - create new table named books by typing following code into you pgAdmin shell
+      ```shell
+      CREATE TABLE books (
+      id SERIAL PRIMARY KEY NOT NULL UNIQUE,
+      name TEXT,
+      about TEXT,
+      rating INT
+      )```
+    - Add date into the table by typing the following code into your pgAdmin shell
+      ```shell
+      INSERT INTO Books (name, about, rating) VALUES
+          ('To Kill a Mockingbird', 'A classic novel exploring themes of racial injustice and moral growth in the American South.', 9),
+          ('1984', 'A dystopian novel that delves into surveillance, propaganda, and the dangers of totalitarianism.', 9),
+          ('The Great Gatsby', 'A tale of excess, wealth, and the American Dream in the Jazz Age.', 8),
+          ('The Catcher in the Rye', 'A coming-of-age novel that follows the adventures of a young man named Holden Caulfield.', 7),
+          ('Harry Potter Series', 'A beloved fantasy series about a young wizard''s adventures at Hogwarts School of Witchcraft and Wizardry.', 9);
+      ```
+
+6. Start the application.
 
     ```shell
     nodemon index.js
