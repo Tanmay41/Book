@@ -76,7 +76,16 @@
 
 
     <div id="score-div">
-        <p id="score"><em id="color"><%= data[0].rating %></em>/10</p>
+        <p id="score"><em class="color" id="color"><%= data[0].rating %></em>/10</p>
     </div>
+
+    <script>
+        if(em.innerHTML > 8){
+            document.getElementsByClassName("color").idList.add('color');
+        } else{
+            document.getElementsByClassName("color").idList.remove('color');
+        }
+    </script>
+</body>
 </body>
 </html>

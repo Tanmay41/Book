@@ -43,7 +43,26 @@ app.get("/search", async (req, res) => {
   res.render("index.ejs", {result, lenght: result.length})
 })
 
+app.get("/add/book", async (req, res) => {
+  res.render("add_books.ejs");
+})
 
+
+app.post("/add", async (req, res) => {
+  try {
+    const bookName = req.body.name;
+    const about = req.body.about;
+    const rating = req.body.rating;
+
+    const insertQuery = `INSERT INTO books (name, about, rating) VALUES ('${bookName}', '${about}', '${rating}')`;
+    await db.query(insertQuery);
+
+    res.redirect("/");
+  } catch (error) {
+    console.error("Error adding a book:", error);
+    res.status(500).send("Internal Server Error");
+  }
+});
 
 
 app.listen(port, () => {

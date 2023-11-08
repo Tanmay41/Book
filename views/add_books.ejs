@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a Book</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(41, 41, 41);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 900;
+        }
+
+        form {
+            width: 100%;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .inputs-div{
+            margin-bottom: 3rem;
+            font-size: 1.5rem;
+        }
+        
+        input[type='text'], select {
+            padding: 15px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            text-align: left;
+            box-shadow: inset -2px -2px 6px rgba(255, 255, 25
+            5, 0.2), inset 2px 2px 6px rgba(0, 0, 0,
+            0.1);
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+            background-color: white;
+            border-radius: 4px;
+            text-align: center;
+            width: 7rem;
+        }
+
+        button:hover {
+        font-family: 'Noto Sans Symbols', sans-serif;
+        outline: none;
+        font-size: 1.5rem;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        background-color: #97ffdb;
+        font-weight: 900;
+        font-size: 3rem;
+        border-radius: 2rem;
+        transition: all .2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <form action="/add" method="post">
+        <div class="inputs-div">
+            Name: <input name="name" type="text" placeholder="Name of the book">
+        </div>
+
+        <div class="inputs-div">
+            About: <input name="about" type="text" placeholder="Describe the story of the book">
+        </div>
+
+        <div class="inputs-div">
+            Rating: <input name="rating" type="text" placeholder="Rate the book out of 10. eg. 7, 3 etc">
+        </div>
+
+        <div>
+            <button onmouseenter="enter(this)" onmouseleave="leave(this)" type="submit">+ Add Book</button>
+        </div>
+    </form>
+
+
+    <script>
+        function enter(x) {
+          x.innerHTML = "+";
+        }
+        
+        function leave(x) {
+          x.innerHTML = "+ Add Book";
+        }
+        </script>
+</body>
+</html>

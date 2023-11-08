@@ -19,12 +19,17 @@
     </div>
     <div id="book-parent">
         <% for (let index = 0; index < lenght; index++) {%>
-            <form action="/Book/<%= index + 1 %>" method="get" class="module-border-wrap">
+            <form action="/Book/<%= result[index].id %>" method="get" class="module-border-wrap">
                 <div class="module">
                     <input type="submit" value="<%= result[index].name %>">
                 </div>
             </form>
         <%} %>
+        <form action="/add/book" method="get" class="module-border-wrap">
+            <div class="module">
+                <input type="submit" value="+ Add Book">
+            </div>
+        </form>
     </div>
 </body>
 </html>
