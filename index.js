@@ -1,8 +1,6 @@
 import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
-import { log } from "console";
-//rgba(243, 238, 255, 0.843)
 const app = express();
 const port = 3000;
 
@@ -10,8 +8,8 @@ const db = new pg.Client({
   user: "postgres",
   host: "localhost",
   database: "Book",
-  password: "Beans@19",
-  port: 2010,
+  password: "PassWord",
+  port: 5432,
 });
 db.connect();
 
