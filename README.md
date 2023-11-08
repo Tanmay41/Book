@@ -48,7 +48,8 @@ This is a web application for managing a collection of books. Users can view a l
       name TEXT,
       about TEXT,
       rating INT
-      )```
+      )
+      ```
     - Add date into the table by typing the following code into your pgAdmin shell
       ```shell
       INSERT INTO Books (name, about, rating) VALUES
