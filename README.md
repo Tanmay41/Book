@@ -24,7 +24,7 @@ This is a web application for managing a collection of books. Users can view a l
 1. Clone this repository to your local machine.
 
     ```shell
-    git clone [<repository-url>](https://github.com/Tanmay41/Book)
+    git clone https://github.com/Tanmay41/Book
     ```
 
 2. Install the required dependencies.
