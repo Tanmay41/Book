@@ -27,14 +27,20 @@ This is a web application for managing a collection of books. Users can view a l
     git clone https://github.com/Tanmay41/Book
     ```
 
-2. Install the required dependencies.
+2. CD into the repo
+
+    ```shell
+    cd book
+    ```
+
+3. Install the required dependencies.
 
     ```shell
     npm install
     ```
-3. Set up your PostgreSQL database and update the database connection details in your code.
+4. Set up your PostgreSQL database and update the database connection details in your code.
 
-4. Start the application.
+5. Start the application.
 
     ```shell
     nodemon index.js
