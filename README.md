@@ -23,19 +23,22 @@ This is a web application for managing a collection of books. Users can view a l
 
 1. Clone this repository to your local machine.
 
-git clone <repository-url>
-
+    ```shell
+    git clone <repository-url>
+    ```
 
 2. Install the required dependencies.
 
-npm install
-
-
+    ```shell
+    npm install
+    ```
 3. Set up your PostgreSQL database and update the database connection details in your code.
 
 4. Start the application.
 
-nodemon index.js
+    ```shell
+    nodemon index.js
+    ```
 
 
 5. Open a web browser and access the application at `http://localhost:3000`.
