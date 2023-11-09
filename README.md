@@ -17,7 +17,6 @@ This is a web application for managing a collection of books. Users can view a l
 - Express.js
 - PostgreSQL
 - EJS (Embedded JavaScript) for templating
-- Other libraries and dependencies (list them here)
 
 ## Getting Started
 
